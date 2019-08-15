@@ -1,0 +1,17 @@
+Find the height of a binary tree which is the number of edges 
+between the tree's root and its furthest leaf. 
+This means that a tree containing a single node has a height zero.
+
+Method:
+public int getTreeHeight(TreeNode node)
+
+TreeNode class:
+public class TreeNode {
+	int val;
+	TreeNode left;
+	TreeNode right;
+
+	TreeNode(int x) {
+		val = x;
+	}
+}

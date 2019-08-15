@@ -1,0 +1,17 @@
+Given the root node of a binary tree, write a function that returns
+the smallest sum of the node values from the root node to leaf node out
+of the set of all possible paths.
+
+Method:
+public int getSmallestSum(TreeNode node)
+
+TreeNode class:
+public class TreeNode {
+	int val;
+	TreeNode left;
+	TreeNode right;
+
+	TreeNode(int x) {
+		val = x;
+	}
+}

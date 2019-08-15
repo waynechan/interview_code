@@ -1,0 +1,6 @@
+Merge k sorted linked lists and return it as one sorted list.
+
+Method:
+public List<Integer> merge(List<List<Integer>> lists)
+
+Runtime O(n log(k))
