@@ -1,0 +1,46 @@
+Write a program to read a input of text fragments and reassemble them.
+The program reads a collection of fragments and then processes them
+in a series of rounds. Each round examines all possible pairings and
+for each pair considers all possible alignments. This identifies the
+pair with the longest overlap. Those two fragments are then aligned at
+the point of maximal overlap and merged into a superstring that has
+the two original fragments as substrings. Each round decreases the
+count of fragments by one. The process repeats until it reaches a
+single result.
+
+Consider a collection with the four fragments shown below:
+
+a l l   i s   w e l l
+e l l   t h a t   e n
+h a t   e n d
+t   e n d s   w e l l
+
+On the first round, the longest overlap is a 6-character
+overlap between the second and third fragments:
+
+e l l   t h a t   e n
+          h a t   e n d
+
+These two fragments merge to the result below. This merged fragment is added
+to the collection; the two fragments it was composed from are discarded.
+
+e l l   t h a t   e n d
+
+On the next round, the longest overlap is 5 characters when these two fragments
+are aligned as below:
+
+e l l   t h a t   e n d
+              t   e n d s   w e l l
+
+These fragments are removed and replaced with their merged result:
+
+e l l   t h a t   e n d s   w e l l
+
+The last round merges the two remaining fragments:
+
+a l l   i s   w e l l
+                e l l   t h a t   e n d s   w e l l
+
+This is the final result:
+
+a l l   i s   w e l l   t h a t   e n d s   w e l l

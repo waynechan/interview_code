@@ -1,0 +1,2 @@
+Implement a trie with insert, search, and startsWith methods.
+All inputs are consist of lowercase letters a-z.

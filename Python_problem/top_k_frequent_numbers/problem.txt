@@ -1,0 +1,4 @@
+Given a non-empty array of integers, return the k most frequent elements.
+
+Example,
+Input: [1,1,5,5,5,3] and k = 2, return [5,1].

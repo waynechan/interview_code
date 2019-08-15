@@ -1,0 +1,19 @@
+You have two binary trees: x and y. check if y is a subtree of x.
+
+Example 1:
+y is a subtree of x
+
+       1                3
+      / \              / 
+ x = 2   3       y =  4
+        /
+       4
+
+Example 2:
+y is not a subtree of x
+
+       1               3
+      / \               \
+ x = 2   3        y =    4
+        /
+       4
